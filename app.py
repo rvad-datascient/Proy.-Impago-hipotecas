@@ -16,7 +16,7 @@ st.title("🔍 Predicción de Impagos Hipotecarios")
 
 # 📦 Cargar modelo y escalador
 try:
-    modelo = joblib.load("modelo_voting.pkl")
+    modelo = joblib.load("modelo_voting_fixed.pkl")
     scaler = joblib.load("scaler_robust.pkl")
 except FileNotFoundError:
     st.error("❌ Archivos 'modelo_voting.pkl' o 'scaler_robust.pkl' no encontrados en el directorio.")
